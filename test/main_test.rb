@@ -1,36 +1,4 @@
-ENV['RACK_ENV'] = 'test'
-$LOAD_PATH.unshift File.dirname(".")
-require 'minitest/autorun'
-require 'rack/test'
-
-require 'main'
-
-include Rack::Test::Methods
-
-
-require 'capybara'
-require 'capybara/dsl'
-require 'capybara/webkit'
-require 'capybara_minitest_spec'
-
-Capybara.app = Main
-Capybara.default_driver = :webkit
-
-class MiniTest::Spec
-  include Capybara::DSL
-end
-
-class Capybara::Session
-  def params
-    Hash[*URI.parse(current_url).query.split(/\?|=|&/)]
-  end
-end
-
-
-
-def app
-  Main
-end
+require 'test_helper'
 
 describe "/ main landing page" do
   before { visit('/') }
