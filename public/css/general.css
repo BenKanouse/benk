@@ -72,6 +72,19 @@ hr.star-primary:after {
   background-color: white;
   color: #2C3E50;
 }
+section.success {
+  background: #18BC9C;
+  color: white;
+}
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0;
+  }
+  section.first {
+    padding-top: 75px;
+  }
+}
+
 .socal-icon {
   width: 2em;
   text-align: center;
