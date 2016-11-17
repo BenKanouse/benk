@@ -72,3 +72,7 @@ hr.star-primary:after {
   background-color: white;
   color: #2C3E50;
 }
+.socal-icon {
+  width: 2em;
+  text-align: center;
+}
