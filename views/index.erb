@@ -160,26 +160,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4 portfolio-item">
-        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">Guitar 1</i>
-            </div>
-          </div>
-          <img src="img/guitar1.jpg" class="img-responsive" alt="">
-        </a>
-      </div>
-      <div class="col-sm-4 portfolio-item">
-        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">Guitar 2 WIP</i>
-            </div>
-          </div>
-          <img src="img/guitar2.jpg" class="img-responsive" alt="">
-        </a>
-      </div>
+      <%= erb :item, locals: {title: "Guitar 1", image: "img/guitar1.jpg"} %>
+      <%= erb :item, locals: {title: "Guitar 2 WIP", image: "img/guitar2.jpg"} %>
     </div>
   </div>
   <br/>

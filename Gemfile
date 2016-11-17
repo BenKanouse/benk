@@ -9,6 +9,10 @@ group :development do
 end
 
 group :test do
+  gem 'capybara'
+  gem 'minitest'
+  gem 'capybara-webkit'
+  gem 'capybara_minitest_spec'
   gem 'pry'
   gem 'rack-test'
 end
