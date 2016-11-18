@@ -50,58 +50,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4 portfolio-item">
-        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">Blog</i>
-            </div>
-          </div>
-          <img src="img/sadpanda.gif" class="img-responsive" alt="">
-        </a>
-      </div>
-      <div class="col-sm-4 portfolio-item">
-        <a href="https://github.com/BenKanouse/ecc" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">Elliptic Curve Cryptography</i>
-            </div>
-          </div>
-          <img src="img/ecc.gif" class="img-responsive" alt="">
-        </a>
-      </div>
-      <div class="col-sm-4 portfolio-item">
-        <a href="https://rubygems.org/gems/minitest-bang/versions/1.0.4" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">MiniTest Bang</i>
-            </div>
-          </div>
-          <img src="img/bang.png" class="img-responsive" alt="">
-        </a>
-      </div>
+      <%= erb :item, locals: {title: "Blog", image: "img/sadpanda.gif", href: "#"} %>
+      <%= erb :item, locals: {title: "Elliptic Curve Cryptography", image: "img/ecc.gif", href: "https://github.com/BenKanouse/ecc"} %>
+      <%= erb :item, locals: {title: "MiniTest Bang", image: "img/bang.png", href: "https://rubygems.org/gems/minitest-bang/versions/1.0.4"} %>
     </div>
     <div class="row">
-      <div class="col-sm-4 portfolio-item">
-        <a href="http://cylindersofexcellence.r14.railsrumble.com/" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">Cylinders of Excellence (Rails Rumble)</i>
-            </div>
-          </div>
-          <img src="img/cylinders.png" class="img-responsive" alt="">
-        </a>
-      </div>
-      <div class="col-sm-4 portfolio-item">
-        <a href="http://www.liaisonedu.com/" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">WebAdMIT</i>
-            </div>
-          </div>
-          <img src="img/WebAdMIT.jpg" class="img-responsive" alt="">
-        </a>
-      </div>
+      <%= erb :item, locals: {title: "Cylinders of Excellence (Rails Rumble)", image: "img/cylinders.png", href: "http://cylindersofexcellence.r14.railsrumble.com/"} %>
+      <%= erb :item, locals: {title: "WebAdMIT", image: "img/WebAdMIT.jpg", href: "http://www.liaisonedu.com/"} %>
     </div>
   </div>
   <br/>
@@ -116,36 +71,9 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4 portfolio-item">
-        <a href="img/lake_erie_poster.pdf" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">Buoy in Lake Erie</i>
-            </div>
-          </div>
-          <img src="img/lake.png" class="img-responsive" alt="">
-        </a>
-      </div>
-      <div class="col-sm-4 portfolio-item">
-        <a href="img/psu_birefringence.pdf" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">Birefringence Persentation</i>
-            </div>
-          </div>
-          <img src="img/pmd1.png" class="img-responsive" alt="">
-        </a>
-      </div>
-      <div class="col-sm-4 portfolio-item">
-        <a href="img/Birefringence_poster.pdf" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">Birefringence Poster</i>
-            </div>
-          </div>
-          <img src="img/pmd2.png" class="img-responsive" alt="">
-        </a>
-      </div>
+      <%= erb :item, locals: {title: "Buoy in Lake Erie", image: "img/lake.png", href: "img/lake_erie_poster.pdf"} %>
+      <%= erb :item, locals: {title: "Birefringence Persentation", image: "img/pmd1.png", href: "img/psu_birefringence.pdf"} %>
+      <%= erb :item, locals: {title: "Birefringence Poster", image: "img/pmd2.png", href: "img/Birefringence_poster.pdf"} %>
     </div>
   </div>
   <br/>
@@ -160,8 +88,8 @@
       </div>
     </div>
     <div class="row">
-      <%= erb :item, locals: {title: "Guitar 1", image: "img/guitar1.jpg"} %>
-      <%= erb :item, locals: {title: "Guitar 2 WIP", image: "img/guitar2.jpg"} %>
+      <%= erb :item, locals: {title: "Guitar 1", image: "img/guitar1.jpg", href: "#"} %>
+      <%= erb :item, locals: {title: "Guitar 2 WIP", image: "img/guitar2.jpg", href: "#"} %>
     </div>
   </div>
   <br/>
@@ -176,16 +104,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4 portfolio-item">
-        <a href="http://us.battle.net/sc2/en/" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x">StarCraft</i>
-            </div>
-          </div>
-          <img src="img/masters_no_name.png" class="img-responsive" alt="">
-        </a>
-      </div>
+      <%= erb :item, locals: {title: "StarCraft", image: "img/masters_no_name.png", href: "http://us.battle.net/sc2/en/"} %>
     </div>
   </div>
   <br/>
