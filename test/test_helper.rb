@@ -5,11 +5,15 @@ require 'rack/test'
 require 'main'
 require 'capybara'
 require 'capybara/dsl'
-require 'capybara/webkit'
+require 'selenium-webdriver'
 require 'capybara_minitest_spec'
+Capybara.register_driver :chrome do |app|
+  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+end
 
+Capybara.server = :webrick
 Capybara.app = Main
-Capybara.default_driver = :webkit
+Capybara.default_driver = :chrome
 
 class MiniTest::Spec
   include Capybara::DSL

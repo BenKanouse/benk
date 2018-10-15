@@ -11,7 +11,7 @@ end
 group :test do
   gem 'capybara'
   gem 'minitest'
-  gem 'capybara-webkit'
+  gem 'selenium-webdriver'
   gem 'capybara_minitest_spec'
   gem 'pry'
   gem 'rack-test'
