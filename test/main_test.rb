@@ -12,11 +12,12 @@ describe "/ main landing page" do
 
   it "should have the full info in each sub-section" do
     within(:css, "section#softwareSection") do
-      page.must_have_content 'Blog'
+      page.must_have_content 'My Blog'
       page.must_have_content 'Elliptic Curve Cryptography'
       page.must_have_content 'MiniTest Bang'
       page.must_have_content 'Cylinders of Excellence (Rails Rumble)'
       page.must_have_content 'WebAdMIT'
+      page.must_have_content 'Resume'
     end
 
     within(:css, "section#mathSection") do
